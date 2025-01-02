@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Driving School</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Header (Hero Section) */
+        .hero {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: white;
+            color: #2575fc;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero .btn:hover {
+            background: #2575fc;
+            color: white;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background: #333;
+            color: white;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navbar ul li a:hover {
+            color: #2575fc;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Courses Section */
+        .courses-section .course-card {
+            display: inline-block;
+            width: 30%;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background: #f9f9f9;
+        }
+
+        .course-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .course-card .btn {
+            display: block;
+            margin: 10px auto 0;
+            padding: 10px 20px;
+            background: #2575fc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .course-card .btn:hover {
+            background: #6a11cb;
+        }
+
+        /* Instructors Section */
+        .instructors-section .instructor-card {
+            display: inline-block;
+            width: 30%;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .instructor-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .instructor-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        /* Contact Section */
+        .contact-section form {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .contact-section label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        .contact-section input, .contact-section textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-section button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #2575fc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .contact-section button:hover {
+            background: #6a11cb;
+        }
+
+        /* Footer */
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>Welcome to Online Driving School</h1>
+            <p>Learn to drive with confidence and safety.</p>
+            <a href="#courses" class="btn">View Courses</a>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#instructors">Instructors</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#login">Login</a></li>
+            <a href="login.php"></a>
+        </ul>
+        
+    </nav>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>
+                We provide top-notch driving education with certified instructors to help you master driving skills. 
+                Join our courses and become a safe and confident driver.
+            </p>
+        </div>
+    </section>
+
+    <section id="courses" class="courses-section">
+        <div class="container">
+            <h2>Our Courses</h2>
+            <div class="course-card">
+                <h3>Beginner's Course</h3>
+                <p>Start from scratch and learn the basics of driving.</p>
+                <a href="#" class="btn">Enroll Now</a>
+            </div>
+            <div class="course-card">
+                <h3>Advanced Driving</h3>
+                <p>Enhance your skills with advanced techniques.</p>
+                <a href="#" class="btn">Enroll Now</a>
+            </div>
+            <div class="course-card">
+                <h3>Test Preparation</h3>
+                <p>Prepare for your driving test with our experts.</p>
+                <a href="#" class="btn">Enroll Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="instructors" class="instructors-section">
+        <div class="container">
+            <h2>Our Instructors</h2>
+            <div class="instructor-card">
+                <img src="https://via.placeholder.com/150?text=Instructor+1" alt="Instructor 1">
+                <h3>John Doe</h3>
+                <p>Certified instructor with 10+ years of experience.</p>
+            </div>
+            <div class="instructor-card">
+                <img src="https://via.placeholder.com/150?text=Instructor+2" alt="Instructor 2">
+                <h3>Jane Smith</h3>
+                <p>Expert in defensive driving techniques.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>
+                Have questions or need assistance? Reach out to us!
+            </p>
+            <p>Email: info@drivingschool.com</p>
+            <p>Phone: +923 456 7890</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Online Driving School. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
